@@ -1,3 +1,16 @@
+# withStyles
+
+Example from https://blog.bitsrc.io/4-ways-to-override-material-ui-styles-43aee2348ded
+
+We can use the withStyles higher-order component to apply our own styles to our components.
+withStyles takes the styles object, which returns another higher component that will apply the styles to a component. With the returned function, we can pass in a component.
+
+In the example below, we passed in the App component so that the styles will be applied. If we passed in App as we do below, then we’ll get access to the classes prop, which has the class name that we can access within the class object.
+
+That class name string is passed into the className prop to apply the class from the styles object.
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,4 +79,3 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-"# with_styles" 
