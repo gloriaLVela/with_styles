@@ -9,6 +9,16 @@ In the example below, we passed in the App component so that the styles will be 
 
 That class name string is passed into the className prop to apply the class from the styles object.
 
+All we need to do is to create a styles object with all the styles that we want to apply in the root property of styles. Then we pass that into withStyles. That returns a higher-order component that we can call a component with to apply the styles.
+The classes object is then available as a prop so we can apply the class names that are generated.
+
+## Pros
+withStyles is more flexible than the other solutions that are presented before.
+We can set any styles with it without much hassle.
+
+## Cons
+It does require the use of a higher-order component. This means more complexity and nesting in our app.
+We have to create a new component from our existing component to apply the styles we want.
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
